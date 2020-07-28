@@ -1,5 +1,18 @@
-goverdhan moguram
-suresh line 
-this si vardhan line
-this is punu line
- this is me
+
+node{
+stage("scm"){
+    echo "get the source code"
+}
+stage("build"){
+    echo "build maven"
+}
+stage("artifactory"){
+    echo "create artifactory"
+}
+stage("push nexus"){
+    echo "push to nexus"
+}
+stage("deploy"){
+    echo "deploy to tomcat"
+}
+}
